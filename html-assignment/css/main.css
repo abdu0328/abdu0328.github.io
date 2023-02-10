@@ -16,7 +16,7 @@ header, footer {
 }
 
 ul.hobbies-list {
-    list-style-type:square;
+    list-style-type: square;
 }
 
 /* include a space infront of :nth-child() */
@@ -24,11 +24,17 @@ ul.hobbies-list :nth-child(odd){
     background-color: aquamarine;
 }
 
-nav ul li{
+nav ul li {
     list-style-type:none;
-    display:inline;
+    display: inline;
+    background-color: blanchedalmond;
+    border: darkred ridge;
 }
 
 nav a:link { 
     text-decoration: none; 
+}
+
+a:hover {
+    background-color: palevioletred;
 }
