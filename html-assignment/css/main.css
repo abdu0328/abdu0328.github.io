@@ -23,3 +23,8 @@ ul.hobbies-list {
 ul.hobbies-list :nth-child(odd){
     background-color: aquamarine;
 }
+
+nav ul li{
+    list-style-type:none;
+    display:inline;
+}
