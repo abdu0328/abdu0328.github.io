@@ -35,6 +35,6 @@ nav a:link {
     text-decoration: none; 
 }
 
-a:hover {
+nav a:hover {
     background-color: palevioletred;
 }
