@@ -19,7 +19,7 @@ ul.hobbies-list {
     list-style-type: square;
 }
 
-/* include a space infront of :nth-child() */
+/* personal note:include a space infront of :nth-child() */
 ul.hobbies-list :nth-child(odd){
     background-color: aquamarine;
 }
