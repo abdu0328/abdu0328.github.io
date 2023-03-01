@@ -16,8 +16,8 @@
         <img src="images/lone-starfish-wide.jpg" alt="wide image of Starfish" title="wide image of Starfish">
     </header>
 
-    <nav class="display">
-        <ul id="navbar">
+    <nav>
+        <ul id="navmenu">
             <li><a href="">HOME</a></li>
             <li><a href="">STORY</a></li>
             <li><a href="">CONTACT</a></li>
@@ -42,29 +42,51 @@
    </article>
 
     <section>
-    <div class="border">
     <h3>Contact to learn more</h3>
-        <form action="about.html" method="get">
-        <div>
-            <label for="fname">First Name</label>
+        <div class="border">
             <br>
-            <input id="fname" name="firstname" type="text" placeholder="First Name">
-        </div>
-        <div>
-            <label for="email">Email</label>
+            
+            <form action="contact" method="get">
+            <div>
+                <label for="fname">First Name</label>
+                <br>
+                <input id="fname" name="firstname" type="text" placeholder="First Name">
+            </div>
+
             <br>
-            <input id="email" name="email" type="text" placeholder="Email">
-        </div>
-        <div>
-            <label for="message">Your Message</label>
+
+            <div>
+                <label for="email">Email</label>
+                <br>
+                <input id="email" name="email" type="text" placeholder="Email">
+            </div>
+
             <br>
-            <textarea id="message" name="message"></textarea>
+
+            <div>
+                <label for="message">Your Message</label>
+                <br>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <div>
+                <h3>Would you like to visit the starfish?</h3>
+                <label for="yes">Yes</label>
+                <!-- note: name can be unique or the same as id name -->
+                <!-- note: however, we must make sure if we want them to have them tied together, they have to have the same name -->
+                <input type="radio" id="yes" name="reply">
+                <label for="no">No</label>
+                <input type="radio" id="no" name="reply">
+                <label for="maybe">Maybe</label>
+                <input type="radio" id="maybe" name="reply">
+            </div>
+
+            <br>
+
+            <div>
+                <button type="submit">Send</button>
+            </div>
+            </form>
         </div>
-        <div>
-            <button type="submit">Send</button>
-        </div>
-        </form>
-    </div>
     </section>
 
     </div>
