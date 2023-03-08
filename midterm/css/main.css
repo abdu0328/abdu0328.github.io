@@ -12,7 +12,7 @@ body {
     background-color: #a8d3ce;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    padding: 20px;
+    padding-top: 0px;
 }
 
 h2 {
@@ -25,9 +25,9 @@ h3 {
 
 a {
     text-decoration: none;
-    width: 100%;
-    display: inline-block;
-    text-align: center;
+    /* width: 100%; */
+    /* display: inline-block; */
+    /* text-align: center; */
     font-weight: 400;
     font-size: 18px;
 }
@@ -44,7 +44,7 @@ a:visited {
 nav ul {
     padding: 1px;
     margin-top: 5px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     text-align: center;
     list-style: none;
     width: 100%;
@@ -131,7 +131,8 @@ header img {
 }
 
 footer {
-    margin-top:15px;
-    padding: 15px;
+    /* margin: 20px; */
+    padding-bottom: 20px;
+    padding-right: 30px;
     text-align: right;
 }
