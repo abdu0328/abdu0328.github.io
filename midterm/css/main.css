@@ -44,7 +44,7 @@ a:visited {
 }
 
 a:hover {
-    color: white;
+    color: orange;
 }
 
 /* spacing the nav and creates responsiveness */
