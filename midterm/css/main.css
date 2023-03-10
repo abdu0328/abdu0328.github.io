@@ -93,6 +93,13 @@ header img {
 article {
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.factlist {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* allows for words to wrap around the image */
