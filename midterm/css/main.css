@@ -43,6 +43,10 @@ a:visited {
     color: black;
 }
 
+a:hover {
+    color: white;
+}
+
 /* spacing the nav and creates responsiveness */
 nav ul {
     padding: 0px;
