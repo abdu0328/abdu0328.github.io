@@ -13,27 +13,28 @@
 <body>
     <!-- nav section: requires a flex on a parent a direct child h1, ul nav, form -->
         <!-- logo  -->
-        <div class="logo">
-            <h1><a href="index.html" title="home page"><img src="images/logo.png" alt="logo"></a></h1>
-        </div>
         <!-- nav bar -->
         <nav>
             <ul>
+                <div class="logo">
+                    <h1><a href="index.html" title="home page"><img src="images/logo.png" alt="logo"></a></h1>
+                </div>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Team</a></li>
                 <li><a href="#">Contact</a></li>
-                <input type="text" placeholder="Search.."> <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search..">
+                <button class="search-button"> <i class="fa-solid fa-magnifying-glass"></i></button>
             </ul>
         </nav>
 
     <header class="welcome">
+        <!-- a wrapper needed to bleed out -->
         <div class="wrapper">
         <h2>Welcome to Three Star Media</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nobis nesciunt tempora et, corrupti, sint vel quia hic rerum deserunt ut veritatis ratione ipsam. Exercitationem laboriosam eos sit aut pariatur.</p>
         <button type="button">Connect with us <i class="fa-solid fa-play"></i></button>
-        <!-- add play button icon -->
         </div>
     </header>
 
@@ -46,7 +47,6 @@
 
     <!-- Our Services -->
     <!-- this section will be layed out using grid in CSS -->
-    <!-- self note: dont forget play buttons -->
     <section class="services">
         <h2>Our Services</h2>
         <div>
@@ -82,7 +82,7 @@
     </section>
 
     <!-- Vision -->
-    <!-- self note: dont forget play buttons -->
+    <!-- a wrapper needed to bleed out -->
      <section class="vision">
         <div class="wrapper">
             <h3>Vision</h3>
@@ -115,9 +115,26 @@
     <!-- Contact Us -->
     <section class="contact">
         <h2>Contact Us</h2>
+        <div>
+            <label for="fullname">Full Name</label><br>
+            <input id="fullname" name="fullname" type="text" placeholder="Full Name">
+        </div>
+
+        <div>
+            <label for="email">Email</label><br>
+            <input id="email" name="email" type="text" placeholder="Email">
+        </div>
+
+        <div>
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message"></textarea>
+        </div>
+        
         <div class="message">
             <h3>Send us a message</h3>
         </div>
+
+        <button type="send-button">Send</button> 
 
         <div class="hours">
             <h3>Hours of operation</h3>
@@ -125,6 +142,7 @@
 
         <div class="location">
             <h3>Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447385676067!2d-75.75712548484202!3d45.34992777909977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1680265199596!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 
