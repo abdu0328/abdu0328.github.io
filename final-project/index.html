@@ -11,28 +11,33 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+    <!-- wrapper containing the whole website -->
+    <div class="wrapper">
     <!-- nav section: requires a flex on a parent a direct child h1, ul nav, form -->
         <!-- logo  -->
         <!-- nav bar -->
         <nav>
             <div class="logo">
-                <h1><a href="index.html" title="home page"><img src="images/logo.png" alt="logo"></a></h1>
+                <h1><a href="index.html" title="homepage"><img src="images/logo.png" alt="logo"></a></h1>
             </div>
+            <!-- or could possibly do something simple like the following: -->
+            <!-- <img class="logo" src="logo.png"> -->
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><input type="text" placeholder="Search..">
+                    <button class="search-button"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                </li>
             </ul>
-            <input type="text" placeholder="Search..">
-            <button class="search-button"> <i class="fa-solid fa-magnifying-glass"></i></button>
         </nav>
 
     <header class="welcome">
         <!-- a wrapper needed to bleed out -->
         <!-- a background image will be need in css -->
-        <div class="wrapper">
+        <div class="bleed">
         <h2>Welcome to Three Star Media</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nobis nesciunt tempora et, corrupti, sint vel quia hic rerum deserunt ut veritatis ratione ipsam. Exercitationem laboriosam eos sit aut pariatur.</p>
         <button type="button">Connect with us <i class="fa-solid fa-play"></i></button>
@@ -41,9 +46,11 @@
 
     <!-- About Us -->
     <section class="about">
+        <div class="bleed">
         <img src="images/about-us.jpg" alt="about us">
         <h2 id="about">About Us</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos similique soluta officia nisi? Quisquam eveniet rerum, tempore quam numquam dolorem consequatur necessitatibus. Doloremque nobis placeat temporibus totam, atque vel accusamus!</p>
+        </div>
     </section>
 
     <!-- Our Services -->
@@ -86,7 +93,7 @@
     <!-- a wrapper needed to bleed out -->
     <!-- a background image will be need in css -->
      <section class="vision">
-        <div class="wrapper">
+        <div class="bleed">
             <h3>Vision</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quae tenetur voluptates! Ducimus, repellat ratione asperiores ut pariatur a officia libero repellendus in nihil, numquam itaque atque similique, architecto consequuntur.</p>
             <button type="button">Learn More</button> 
@@ -163,10 +170,14 @@
         </div>
     </section>
 
+
     <footer>
+        <div class="bleed">
         <p>&copy; Copyright Three Star Media, 2020</p>
         <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
+        </div>
     </footer>
+    </div>
     
 </body>
 </html>
