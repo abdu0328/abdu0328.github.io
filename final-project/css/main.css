@@ -59,22 +59,61 @@ table {
 nav .logo img {
     float:left;
     width: 10%;
+    padding-left: 1rem;
 }
+
 nav ul {
-    color: #dc0505;
+    background-color: #000000;
     text-align: center;
-    padding: 5rem 0.5rem 0.5rem;
+    padding: 6rem 1rem 0.5rem 1rem;
     text-decoration: none;
     font-size: 17px;
 }
+
+
+nav li {
+    padding: 1rem 0rem 1rem;
+}
+
 a {
     text-decoration: none;
+    color:darkgoldenrod;
     /* width: 100%; */
     /* display: inline-block; */
     /* text-align: center; */
     font-weight: 400;
     font-size: 18px;
 }
+
+/* fix Home link colour somehow */
+
+nav li:nth-child(1){
+    background-color: darkgoldenrod;
+}
+
+#search-container {
+    position: relative;
+}
+
+#search {
+    height:50px; 
+    float:left bottom;
+    margin:0; 
+    padding:10px;
+    width: 93%;
+}
+
+.search-button {
+    position:relative;
+    float:right;
+    width:50px;
+    height:50px;
+    font-size: 25px;
+    color: goldenrod;
+    border-color: goldenrod;
+    background-color: #000000;
+}
+
 
 .welcome {
     position: relative;

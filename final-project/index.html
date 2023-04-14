@@ -22,13 +22,16 @@
             <!-- or could possibly do something simple like the following: -->
             <!-- <img class="logo" src="logo.png"> -->
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><input type="text" placeholder="Search..">
+                <li>
+                    <div id="search-container">
+                    <input type="text" id="search" value="Search.." placeholder="Search..">
                     <button class="search-button"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
                 </li>
             </ul>
         </nav>
@@ -36,8 +39,7 @@
     <header class="welcome">
         <!-- a wrapper needed to bleed out -->
          <!-- background image will styled in css to for bleed -->
-
-         <img src="images/main-banner.jpg" alt="image of office" title="main-banner">
+        <img src="images/main-banner.jpg" alt="image of office" title="main-banner">
         <div class="bleed1">
             <h2>Welcome to Three Star Media</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nobis nesciunt tempora et, corrupti, sint vel quia hic rerum deserunt ut veritatis ratione ipsam. Exercitationem laboriosam eos sit aut pariatur.</p>
