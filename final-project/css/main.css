@@ -78,7 +78,7 @@ a {
 
 .welcome {
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .welcome .bleed1 {
