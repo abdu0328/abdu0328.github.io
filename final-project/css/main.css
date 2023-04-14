@@ -48,14 +48,22 @@ table {
 }
 
 /* main css starts here */
-nav .logo {
-    float: left;
+* {
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    /* border:#dc0505; */
+}
+
+nav .logo img {
+    float:left;
+    width: 10%;
 }
 nav ul {
-    float: center;
     color: #dc0505;
     text-align: center;
-    padding: 14px 16px;
+    padding: 5rem 0.5rem 0.5rem;
     text-decoration: none;
     font-size: 17px;
 }
@@ -68,12 +76,33 @@ a {
     font-size: 18px;
 }
 
-/* nav search somehow center */
 .welcome {
-    background-image: inherit;
-    margin: auto;
-    max-width: max-content;
+    position: relative;
+    display: inline-block;
 }
+
+.welcome .bleed1 {
+    position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 30%; /* Adjust this value to move the positioned div up and down */
+        text-align: left;
+        width: 95%; /* Set the width of the positioned div */
+}
+
+.bleed1{
+    color: white;
+    background: rgba(43, 42, 42, 0.5); 
+    padding: 5rem;
+}
+
+
+/* nav search somehow center */
+/* body {
+    max-width: max-content;
+} */
 
 
 
