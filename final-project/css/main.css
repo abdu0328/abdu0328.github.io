@@ -56,24 +56,29 @@ table {
     /* border:#dc0505; */
 }
 
-nav .logo img {
-    float:left;
+nav img {
     width: 10%;
-    padding-left: 1rem;
+    display:flex;
+    
 }
 
-nav ul {
-    background-color: #000000;
+.logo {
+    background-color: darkgoldenrod;
+}
+
+
+nav {
+     background-color: #000000;
     text-align: center;
-    padding: 6rem 1rem 0.5rem 1rem;
+    padding: 1rem;
     text-decoration: none;
     font-size: 17px;
 }
 
-
-nav li {
+/* dont need */
+/* nav li {
     padding: 1rem 0rem 1rem;
-}
+} */
 
 a {
     text-decoration: none;
@@ -87,9 +92,45 @@ a {
 
 /* fix Home link colour somehow */
 
-nav li:nth-child(1){
+/* nav li:nth-child(1){
+    background-color: darkgoldenrod;
+} */
+
+.home {
+    color:#222;
+    background-color: darkgoldenrod;
+    display: block;
+    padding-top:0;
+    padding-bottom:1rem;
+}
+
+.logo{
     background-color: darkgoldenrod;
 }
+
+nav ul li:nth-child(1){
+    padding: 0;
+}
+
+nav ul li:nth-child(2){
+    padding: 1rem;
+}
+
+nav ul li:nth-child(3){
+    padding:1rem;
+}
+
+nav ul li:nth-child(4){
+    padding:1rem;
+}
+
+nav ul li:nth-child(5){
+    padding:1rem;
+}
+h1{
+    height: 150px;
+}
+
 
 #search-container {
     position: relative;
@@ -126,15 +167,15 @@ nav li:nth-child(1){
         margin: 0 auto;
         left: 0;
         right: 0;
-        top: 30%; /* Adjust this value to move the positioned div up and down */
+        top: 10%; /* Adjust this value to move the positioned div up and down */
         text-align: left;
-        width: 95%; /* Set the width of the positioned div */
+        width: 100%; /* Set the width of the positioned div */
 }
 
 .bleed1{
     color: white;
-    background: rgba(43, 42, 42, 0.5); 
-    padding: 5rem;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 5rem 1rem;
 }
 
 
@@ -143,5 +184,49 @@ nav li:nth-child(1){
     max-width: max-content;
 } */
 
+/* fonts */
+h2 {
+    font-size:5rem;
+    font-weight: bolder;
+    padding-bottom: 2rem;
+}
 
+h3 {
+    font-size:3rem;
+    font-weight: bolder;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 
+h4 {
+    font-size:2rem;
+    font-weight: bolder;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.button {
+    background-color:goldenrod;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: fit-content;
+  }
+
+    /* possibly add div in html around buttons */
+
+.about {
+    background: #ffe6ac;
+    padding: 1rem;
+}
+
+.digital, .marketing, .video, .web, .print {
+    background: #ffe6ac;
+    padding: 1rem;
+    padding-top: 0;
+    margin: 1rem;
+}
