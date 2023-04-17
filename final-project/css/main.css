@@ -56,6 +56,10 @@ table {
     /* border:#dc0505; */
 }
 
+p {
+    font-size: 1.1rem;
+}
+
 nav img {
     width: 10%;
     display:flex;
@@ -100,7 +104,7 @@ a {
     color:#222;
     background-color: darkgoldenrod;
     display: block;
-    padding-top:0;
+    padding-top:1;
     padding-bottom:1rem;
 }
 
@@ -138,7 +142,6 @@ h1{
 
 #search {
     height:50px; 
-    float:left bottom;
     margin:0; 
     padding:10px;
     width: 93%;
@@ -163,13 +166,12 @@ h1{
 
 .welcome .bleed1 {
     position: absolute;
-        z-index: 999;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        top: 10%; /* Adjust this value to move the positioned div up and down */
-        text-align: left;
-        width: 100%; /* Set the width of the positioned div */
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 10%; /* Adjust this value to move the positioned div up and down */
+    text-align: left;
+    width: 100%; /* Set the width of the positioned div */
 }
 
 .bleed1{
@@ -188,21 +190,27 @@ h1{
 h2 {
     font-size:5rem;
     font-weight: bolder;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 h3 {
     font-size:3rem;
     font-weight: bolder;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 1rem;
 }
 
 h4 {
     font-size:2rem;
     font-weight: bolder;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+h5 {
+    font-size:1.5rem;
+    font-weight: bolder;
+    /* add a line here, possibly get rid of the break in html */
+    padding-bottom: 1rem;
 }
 
 .button {
@@ -211,7 +219,7 @@ h4 {
     color: black;
     padding: 15px 32px;
     margin-top: 15px;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     font-size: 16px;
     width: fit-content;
@@ -219,14 +227,92 @@ h4 {
 
     /* possibly add div in html around buttons */
 
+.services {
+    padding:10px;
+}
+
 .about {
     background: #ffe6ac;
+    padding: 1rem;
+}
+
+.about p{
     padding: 1rem;
 }
 
 .digital, .marketing, .video, .web, .print {
     background: #ffe6ac;
     padding: 1rem;
-    padding-top: 0;
-    margin: 1rem;
+    padding-top: 0; 
+    margin-top: 1rem;
 }
+
+/* figure out how to bleed the content images here */
+/* .digital img, .marketing img, .video img, .webimg, .print img{
+   width: 100%;
+} */
+
+.digital p, .marketing p, .video p, .web p, .print p{
+    padding-bottom: 1rem;
+}
+
+/* 
+.vision img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+} */
+
+/* line height */
+
+.vision {
+    background-image: url('/images/vision.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+  }
+
+  .bleed {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    color: white;
+  }
+
+  .john, .bob {
+    background: #ffe6ac;
+    padding: 1rem;
+    padding-top: 0; 
+    margin-top: 1rem;
+}
+
+.contactus {
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
+#fullname, #email {
+    margin: auto;
+    padding: 10px;
+    margin-top:5px;
+    border: 0.1pt solid black;
+    border-radius: 2px;
+}
+
+#message {
+    margin:auto;
+    padding: 75px;
+    margin-top:5px;
+    border: 0.1pt solid black;
+    border-radius: 2px;
+}
+
+/* need to seperate the forms more, fix the padding on the right side */
+
+
+
+
