@@ -104,7 +104,7 @@ a {
     color:#222;
     background-color: darkgoldenrod;
     display: block;
-    padding-top:1;
+    padding-top:1rem;
     padding-bottom:1rem;
 }
 
@@ -197,6 +197,7 @@ h3 {
     font-size:3rem;
     font-weight: bolder;
     padding: 1rem;
+    padding-left: 0;
 }
 
 h4 {
@@ -210,7 +211,12 @@ h5 {
     font-size:1.5rem;
     font-weight: bolder;
     /* add a line here, possibly get rid of the break in html */
-    padding-bottom: 1rem;
+    padding-bottom:0.5rem;
+    /* text-decoration: underline;  
+    text-decoration-color: #DF5689;  
+    text-decoration-style: solid; */
+    border-bottom: 2px solid goldenrod;
+    
 }
 
 .button {
@@ -296,23 +302,41 @@ h5 {
 }
 
 #fullname, #email {
-    margin: auto;
     padding: 10px;
-    margin-top:5px;
+    margin-top:0.5rem;
+    margin-bottom:1rem;
     border: 0.1pt solid black;
     border-radius: 2px;
 }
 
 #message {
-    margin:auto;
     padding: 75px;
-    margin-top:5px;
+    margin-top:1rem;
+    margin-bottom:1rem;
     border: 0.1pt solid black;
     border-radius: 2px;
 }
 
 /* need to seperate the forms more, fix the padding on the right side */
 
+table, td, th {
+    border: 1px solid black;
+    width: 60%;
+    padding: 1rem;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th {
+    height: 60px;
+    padding:1rem;
+    /* is there a way to center th  */
+    background:#ffe6ac;
+  }
 
-
-
+  .location iframe{
+    height: 500px;
+  }
