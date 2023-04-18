@@ -50,7 +50,8 @@ table {
 /* main css starts here */
 * {
     box-sizing: border-box;
-    width: 100%;
+    /* width: 100%; */
+    max-width: 760px;
     margin: auto;
     padding: 0px;
     /* border:#dc0505; */
@@ -67,12 +68,12 @@ nav img {
 }
 
 .logo {
-    background-color: darkgoldenrod;
+    background-color: #c78c06;
 }
 
 
 nav {
-     background-color: #000000;
+    background-color: #222;
     text-align: center;
     padding: 1rem;
     text-decoration: none;
@@ -84,9 +85,9 @@ nav {
     padding: 1rem 0rem 1rem;
 } */
 
-a {
+nav a {
     text-decoration: none;
-    color:darkgoldenrod;
+    color:#c78c06;
     /* width: 100%; */
     /* display: inline-block; */
     /* text-align: center; */
@@ -102,14 +103,14 @@ a {
 
 .home {
     color:#222;
-    background-color: darkgoldenrod;
+    background-color: #c78c06;
     display: block;
     padding-top:1rem;
     padding-bottom:1rem;
 }
 
 .logo{
-    background-color: darkgoldenrod;
+    background-color: #c78c06;
 }
 
 nav ul li:nth-child(1){
@@ -153,9 +154,9 @@ h1{
     width:50px;
     height:50px;
     font-size: 25px;
-    color: goldenrod;
-    border-color: goldenrod;
-    background-color: #000000;
+    color: #c78c06;
+    border-color: #c78c06;
+    background-color: #222;
 }
 
 
@@ -172,6 +173,14 @@ h1{
     top: 10%; /* Adjust this value to move the positioned div up and down */
     text-align: left;
     width: 100%; /* Set the width of the positioned div */
+}
+
+.welcome p{
+    padding-bottom: 1rem;
+}
+
+.about img {
+    max-width: 100%;
 }
 
 .bleed1{
@@ -203,7 +212,7 @@ h3 {
 h4 {
     font-size:2rem;
     font-weight: bolder;
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
     padding-bottom: 1rem;
 }
 
@@ -215,21 +224,54 @@ h5 {
     /* text-decoration: underline;  
     text-decoration-color: #DF5689;  
     text-decoration-style: solid; */
-    border-bottom: 2px solid goldenrod;
+    border-bottom: 2px solid #c78c06;
     
 }
 
-.button {
-    background-color:goldenrod;
+.connect-button {
+    display: inline-block;
+    padding: 40px 0px;
+    font-size: 24px;
+    color: #222;
+    background-color: #c78c06;
     border: none;
-    color: black;
-    padding: 15px 32px;
+    width: 300px;
+  }
+  
+  .connect-button i {
+    margin-left: 1rem;
+  }
+
+/* .button {
+    display: inline-flex;
+    height:100px;
+    background-color:#c78c06;
+    border: none;
+    color: #222;
+    padding: 0;
     margin-top: 15px;
     text-align: left;
     text-decoration: none;
-    font-size: 16px;
-    width: fit-content;
+    font-size: 1.2rem;
+    width: 275px;
   }
+
+  .button-text, .button-icon {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .button-text {
+    padding:0 24px;
+  }
+
+  .button-icon {
+    font-size: 1.5em;
+    text-align: center;
+    padding:0;
+  } */
+
 
     /* possibly add div in html around buttons */
 
@@ -243,7 +285,7 @@ h5 {
 }
 
 .about p{
-    padding: 1rem;
+    padding-right: 0rem;
 }
 
 .digital, .marketing, .video, .web, .print {
@@ -251,6 +293,11 @@ h5 {
     padding: 1rem;
     padding-top: 0; 
     margin-top: 1rem;
+}
+
+.digital img, .marketing img, .video img, .web img, .print img, .john img, .bob img {
+    width: 100%;
+    height: auto;
 }
 
 /* figure out how to bleed the content images here */
@@ -276,17 +323,36 @@ h5 {
     background-image: url('/images/vision.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    background-position: center;
+    height: 300px;
     position: relative;
   }
 
   .bleed {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  
+    /* left: 50%;
+    transform: translate(-50%, -50%); */
     padding: 1rem;
     color: white;
+  }
+
+  .bleed p {
+    padding-bottom: 1rem;
+  }
+
+  .vision-button {
+    /* display: inline-block; */
+    padding: 40px 0px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #222;
+    border: solid #c78c06;
+    width: 250px;
+  }
+
+  .vision-button i {
+    margin-left: 1rem;
   }
 
   .john, .bob {
@@ -305,16 +371,18 @@ h5 {
     padding: 10px;
     margin-top:0.5rem;
     margin-bottom:1rem;
-    border: 0.1pt solid black;
+    border: 0.1pt solid #222;
     border-radius: 2px;
+    width: 100%;
 }
 
 #message {
     padding: 75px;
     margin-top:1rem;
     margin-bottom:1rem;
-    border: 0.1pt solid black;
+    border: 0.1pt solid #222;
     border-radius: 2px;
+    width: 100%;
 }
 
 /* need to seperate the forms more, fix the padding on the right side */
@@ -339,4 +407,45 @@ table, td, th {
 
   .location iframe{
     height: 500px;
+    width: 100%;
+  }
+
+ footer {
+    background-color: #222;
+    color: #c78c06;
+    padding: 2rem 1rem;
+    line-height: 3rem;
+  }
+
+  footer a {
+    color: #c78c06;
+  }
+
+  /* .service-button {
+    display: inline-flex;
+    height:100px;
+    background-color:#222;
+    border: none;
+    color: white;
+    padding: 2rem;
+    margin-top: 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    width: 275px;
+
+  } */
+
+  .service-button {
+    display: inline-block;
+    padding: 40px 0px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #222;
+    border: none;
+    width: 250px;
+  }
+  
+  .service-button i {
+    margin-left: 1rem;
   }
