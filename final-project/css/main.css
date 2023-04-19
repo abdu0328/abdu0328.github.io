@@ -501,6 +501,7 @@ table, td, th {
         align-items: center;
         height:150px;
         background-color: #222;
+        width: 100%;
       }
 
     nav {
@@ -508,8 +509,10 @@ table, td, th {
         justify-content: space-between;
         align-items: center;
         background-color: #222;
-        padding: 2rem;
+        padding: 2rem 2rem;
+        padding-right: 4rem;
         margin-right: auto;
+        width: inherit;
      
     }
     
@@ -528,32 +531,53 @@ table, td, th {
         height: auto; /* set the height to auto to maintain aspect ratio */
       }
           
+    /* nav css here */
+
+   
+      
     nav ul {
-        padding: 0px;
-        margin-top: 5px;
-        /* justify-content: space-between; */
-        text-align: center;
         list-style: none;
-        width: 100%;
-        display: flex;
-    }
-          
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      
     nav li {
-        width: inherit;
-        margin-right: 50px
-    }
-          
+        display: inline-block;
+      }
+      
     nav a {
-        text-decoration: none;
+        display: block;
         color: #c78c06;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+    nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+
+    /* #search-button {
+    
+    } */
+
+    .about {
+        padding: 3rem;
+    }
+    
+    .about p{
+        padding-right: 0rem;
     }
 
-    .home {
-        color:#222;
-        background-color: #c78c06;
-        display: block;
-        padding: 1rem 2rem;
+    .about img {
+        float: left;
+        width: 50%;
+       padding: 1rem;
     }
+    
           
 }
 /*
