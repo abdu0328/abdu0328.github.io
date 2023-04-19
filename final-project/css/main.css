@@ -76,6 +76,7 @@ nav {
     background-color: #222;
     text-align: center;
     padding: 1rem;
+    padding-top: 0;
     text-decoration: none;
     font-size: 17px;
 }
@@ -110,7 +111,8 @@ nav a {
 }
 
 .logo{
-    background-color: #c78c06;
+    background-color: #222;
+    padding: 0 1rem;
 }
 
 nav ul li:nth-child(1){
@@ -146,6 +148,7 @@ h1{
     margin:0; 
     padding:10px;
     width: 93%;
+    display: flex;
 }
 
 .search-button {
@@ -160,23 +163,45 @@ h1{
 }
 
 
+/* .welcome {
+    position: relative;
+  
+} */
+
 .welcome {
+    background-image: url('/images/main-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    position: relative;
+  }
+
+/* figure out a way to get main banner as background img */
+/* .welcome {
     position: relative;
     /* display: inline-block; */
-}
+    /* background-image: url('/images/main-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:800px;
+    position: relative;
+}  */
 
 .welcome .bleed1 {
     position: absolute;
-    margin: 0 auto;
+    top: 1%;
     left: 0;
+    bottom: 0;
     right: 0;
-    top: 10%; /* Adjust this value to move the positioned div up and down */
     text-align: left;
-    width: 100%; /* Set the width of the positioned div */
+    margin: 65px 0px;
 }
 
 .welcome p{
     padding-bottom: 1rem;
+    line-height: 1.5rem;
 }
 
 .about img {
@@ -196,10 +221,15 @@ h1{
 } */
 
 /* fonts */
+h1 {
+    background: #c78c06;
+}
+
 h2 {
     font-size:5rem;
     font-weight: bolder;
     padding-bottom: 1rem;
+    line-height: 6rem;
 }
 
 h3 {
@@ -275,7 +305,7 @@ h5 {
 
     /* possibly add div in html around buttons */
 
-.services {
+.services, .team {
     padding:10px;
 }
 
@@ -449,3 +479,99 @@ table, td, th {
   .service-button i {
     margin-left: 1rem;
   }
+
+  .send-button {
+    background-color: #222;
+    color:#c78c06;
+    border: none;
+    font-size: 24px;
+    padding: 5px;
+    width:fit-content;
+  }
+
+  /* desktop style */
+    @media screen and (min-width: 760px){
+     * {
+        max-width: 1200px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height:150px;
+        background-color: #222;
+      }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #222;
+        padding: 2rem;
+        margin-right: auto;
+     
+    }
+    
+    .logo {
+        background-color: #222;
+        margin-left: 100px;
+    }
+
+    .logo h1{
+        margin: 0;
+        height: auto;
+    }
+    
+    h1 img {
+        width: 75px; /* set the desired width */
+        height: auto; /* set the height to auto to maintain aspect ratio */
+      }
+          
+    nav ul {
+        padding: 0px;
+        margin-top: 5px;
+        /* justify-content: space-between; */
+        text-align: center;
+        list-style: none;
+        width: 100%;
+        display: flex;
+    }
+          
+    nav li {
+        width: inherit;
+        margin-right: 50px
+    }
+          
+    nav a {
+        text-decoration: none;
+        color: #c78c06;
+    }
+
+    .home {
+        color:#222;
+        background-color: #c78c06;
+        display: block;
+        padding: 1rem 2rem;
+    }
+          
+}
+/*
+    h1 {
+        background-color: #222;
+    }
+
+    ul li {
+        display: inline-block;
+      }
+
+    ul {
+        background-color: #222;
+    }
+
+    ul a {
+        color: #c78c06;
+    }
+     */
+
+  

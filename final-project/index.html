@@ -15,31 +15,35 @@
     <!-- nav section: requires a flex on a parent a direct child h1, ul nav, form -->
         <!-- logo  -->
         <!-- nav bar -->
-        <nav>
+        <header>
             <!-- <h1 class="logo"><img src="images/logo.png" alt="logo"></h1> -->
             <div class="logo">
                 <h1><img src="images/logo.png" alt="logo"></h1>
             </div>
+            <nav>
             <!-- or could possibly do something simple like the following: -->
             <!-- <img class="logo" src="logo.png"> -->
-            <ul>
-                <li><a class="home" href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-
-            </ul>
-            <form id="search-container">
+                <ul>
+                    <li><a class="home" href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            <!-- <div class="search-container"> -->
+            <!-- <form> -->
+                <form id="search-container">
                 <input type="text" id="search" value="Search.." placeholder="Search..">
-                <button class="search-button"> <i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-        </nav>
+                <!-- <button type="submit" class="search-button"> <i class="fa-solid fa-magnifying-glass"></i></button> -->
+                 </form>
+            <!-- </form> -->
+            </nav>
+        </header>
 
-    <header class="welcome">
+    <section class="welcome">
         <!-- a wrapper needed to bleed out -->
          <!-- background image will styled in css to for bleed -->
-        <img src="images/main-banner.jpg" alt="image of office" title="main-banner">
+        <!-- <img src="images/main-banner.jpg" alt="image of office" title="main-banner"> -->
         <div class="bleed1">
             <h2>Welcome to Three Star Media</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nobis nesciunt tempora et, corrupti, sint vel quia hic rerum deserunt ut veritatis ratione ipsam. Exercitationem laboriosam eos sit aut pariatur.</p>
@@ -50,7 +54,7 @@
                 </span> -->
             </button>
         </div>
-    </header>
+    </section>
 
     <!-- About Us -->
     <section class="about">
@@ -153,7 +157,7 @@
             <textarea id="message" name="message"></textarea>
         </div>
 
-        <button type="button">Send</button> 
+        <button class="send-button">Send</button> 
 
        
             <h4>Hours of operation</h4>
