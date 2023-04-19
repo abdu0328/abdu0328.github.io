@@ -169,7 +169,7 @@ h1{
 } */
 
 .welcome {
-    background-image: url('/images/main-banner.jpg');
+    background-image: url('images/main-banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -350,7 +350,7 @@ h5 {
 /* line height */
 
 .vision {
-    background-image: url('/images/vision.jpg');
+    background-image: url('images/vision.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
