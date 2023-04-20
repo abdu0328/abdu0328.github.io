@@ -163,11 +163,8 @@ h1{
 }
 
 .search-button {
-    /* position:relative; */
     text-align: center;
     margin:0;
-    /* width:min-content; */
-    /* float:right; */
     width:50px;
     height:50px;
     font-size: 25px;
@@ -175,12 +172,6 @@ h1{
     border-color: #c78c06;
     background-color: #222;
 }
-
-
-/* .welcome {
-    position: relative;
-  
-} */
 
 .welcome {
     background-image: url("../images/main-banner.jpg");
@@ -190,18 +181,6 @@ h1{
     height: 800px;
     position: relative;
   }
-
-/* figure out a way to get main banner as background img */
-/* .welcome {
-    position: relative;
-    /* display: inline-block; */
-    /* background-image: url('/images/main-banner.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height:800px;
-    position: relative;
-}  */
 
 .welcome .bleed1 {
     position: absolute;
@@ -228,14 +207,6 @@ h1{
     padding: 5rem 1rem;
 }
 
-
-/* nav search somehow center */
-/* body {
-    max-width: max-content;
-} */
-
-/* fonts */
-
 h2 {
     font-size:5rem;
     font-weight: 800;
@@ -260,17 +231,11 @@ h4 {
 h5 {
     font-size:1.5rem;
     font-weight: 800;
-    /* add a line here, possibly get rid of the break in html */
     padding-bottom:0.5rem;
-    /* text-decoration: underline;  
-    text-decoration-color: #DF5689;  
-    text-decoration-style: solid; */
     border-bottom: 2px solid #c78c06;
-    
 }
 
 .connect-button {
-    /* display: inline-block; */
     padding: 40px 0px;
     font-size: 24px;
     color: #222;
@@ -279,42 +244,9 @@ h5 {
     width: 300px;
   }
   
-  .connect-button i {
+.connect-button i {
     margin-left: 1rem;
-  }
-
-/* .button {
-    display: inline-flex;
-    height:100px;
-    background-color:#c78c06;
-    border: none;
-    color: #222;
-    padding: 0;
-    margin-top: 15px;
-    text-align: left;
-    text-decoration: none;
-    font-size: 1.2rem;
-    width: 275px;
-  }
-
-  .button-text, .button-icon {
-    display: inline-flex;
-    align-items: center;
-    height: 100%;
-  }
-
-  .button-text {
-    padding:0 24px;
-  }
-
-  .button-icon {
-    font-size: 1.5em;
-    text-align: center;
-    padding:0;
-  } */
-
-
-    /* possibly add div in html around buttons */
+}
 
 .services, .team {
     padding:10px;
@@ -341,24 +273,9 @@ h5 {
     height: auto;
 }
 
-/* figure out how to bleed the content images here */
-/* .digital img, .marketing img, .video img, .webimg, .print img{
-   width: 100%;
-} */
-
 .digital p, .marketing p, .video p, .web p, .print p{
     padding-bottom: 1rem;
 }
-
-/* 
-.vision img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
-} */
-
-/* line height */
 
 .vision {
     background-image: url("../images/vision.jpg");
@@ -367,129 +284,63 @@ h5 {
     background-position: center;
     height: 300px;
     position: relative;
-  }
+}
 
-  .bleed {
+.bleed {
     position: absolute;
-  
-    /* left: 50%;
-    transform: translate(-50%, -50%); */
     padding: 1rem;
     color: white;
-  }
+}
 
-  .bleed p {
+.bleed p {
     padding-bottom: 1rem;
-  }
+}
 
-  .vision-button {
-    /* display: inline-block; */
+.vision-button {
     padding: 40px 0px;
     font-size: 24px;
     color: #fff;
     background-color: #222;
     border: solid #c78c06;
     width: 250px;
-  }
+}
 
-  .vision-button i {
+.vision-button i {
     margin-left: 1rem;
-  }
-
-  /* .john, .bob {
-    background: #ffe6ac;
-    padding: 1rem;
-    padding-top: 0; 
-    margin-top: 1rem;
-} */
-
-.john-img img, .bob-img img{
-    width: 100%;
-    height: auto;
-    display: block;
-
 }
-
-.john-content, .bob-content{
-    background: #ffe6ac;
-    padding: 1rem;
-    padding-top: 0; 
-    margin-bottom: 1rem;
-}
-
-.contactus {
-    padding: 1rem;
-    padding-top: 2rem;
-}
-
-#fullname, #email {
-    padding: 10px;
-    margin-top:0.5rem;
-    margin-bottom:1rem;
-    border: 0.1pt solid #222;
-    border-radius: 2px;
-    width: 100%;
-}
-
-#message {
-    padding: 75px;
-    margin-top:1rem;
-    margin-bottom:1rem;
-    border: 0.1pt solid #222;
-    border-radius: 2px;
-    width: 100%;
-}
-
-/* need to seperate the forms more, fix the padding on the right side */
 
 table, td, th {
     border: 1px solid black;
     width: 60%;
     padding: 1rem;
-  }
+}
   
-  table {
+table {
     border-collapse: collapse;
     width: 100%;
-  }
+}
   
-  th {
+th {
     height: 60px;
     padding:1rem;
-    /* is there a way to center th  */
     background:#ffe6ac;
-  }
+}
 
-  .location iframe{
+.location iframe{
     height: 500px;
     width: 100%;
-  }
+}
 
- footer {
+footer {
     background-color: #222;
     color: #c78c06;
     padding: 2rem 1rem;
     line-height: 3rem;
-  }
+}
 
-  footer a {
+footer a {
     color: #c78c06;
-  }
-
-  /* .service-button {
-    display: inline-flex;
-    height:100px;
-    background-color:#222;
-    border: none;
-    color: white;
-    padding: 2rem;
-    margin-top: 0;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.2rem;
-    width: 275px;
-
-  } */
+}
 
 /* services */
 .services .grid{
@@ -505,7 +356,7 @@ table, td, th {
     grid-template-rows: repeat(5,1fr);
 }
 
-  .service-button {
+.service-button {
     display: inline-block;
     padding: 40px 0px;
     font-size: 24px;
@@ -513,24 +364,24 @@ table, td, th {
     background-color: #222;
     border: none;
     width: 40%;
-  }
+}
   
-  .service-button i {
+.service-button i {
     margin-left: 1rem;
-  }
+}
 
-  .send-button {
+.send-button {
     background-color: #222;
     color:#c78c06;
     border: none;
     font-size: 24px;
     padding: 5px;
     width:fit-content;
-  }
+}
 
-  /* desktop style */
+    /* desktop style */
     @media screen and (min-width: 760px){
-     * {
+    * {
         max-width: 1200px;
     }
 
@@ -541,7 +392,7 @@ table, td, th {
         height:150px;
         background-color: #222;
         width: 100%;
-      }
+    }
 
     nav {
         display: flex;
@@ -552,9 +403,8 @@ table, td, th {
         padding-right: 6rem;
         margin-right: auto;
         width: inherit;
-     
     }
-    
+        
     .logo {
         background-color: #222;
         margin-left: 100px;
@@ -568,22 +418,19 @@ table, td, th {
     h1 img {
         width: 75px; /* set the desired width */
         height: auto; /* set the height to auto to maintain aspect ratio */
-      }
+    }
           
     /* nav css here */
-
-   
-      
     nav ul {
         list-style: none;
         margin: 0;
         padding: 0;
         text-align: center;
-      }
+        }
       
     nav li {
         display: inline-block;
-      }
+    }
       
     nav a {
         display: block;
@@ -591,22 +438,17 @@ table, td, th {
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-      }
+    }
       
     nav a:hover {
         background-color: #ddd;
         color: black;
-      }
+    }
       
-
-    /* #search-button {
-    
-    } */
-
     .about {
         height: 340px;
         width: 100%; /* Set the width to 100% of the parent container */
-      }
+    }
 
     .container {
         width: auto;
@@ -623,9 +465,6 @@ table, td, th {
     
     .services .grid {
         display: grid;
-        /* grid-template-areas:
-        "digital digital digital marketing marketing marketing"
-        "video video web web print print"; */
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 0.5rem;
@@ -635,122 +474,87 @@ table, td, th {
         grid-column: 1/4;
      }
 
-     .services .grid div:nth-child(2) {
+    .services .grid div:nth-child(2) {
         grid-column: 4/7;
-     }
-     .services .grid div:nth-child(3) {
+    }
+    .services .grid div:nth-child(3) {
         grid-column: 1/3;
-     }
+    }
      .services .grid div:nth-child(4) {
         grid-column: 3/5;
-     }
-     .services .grid div:nth-child(5) {
+    }
+    .services .grid div:nth-child(5) {
         grid-column: 5/7;
-     }
+    }
 
-/* team */
-.john-content, .bob-content{
-    margin-bottom: 0;
-}
+    /* team */
+    .john-content, .bob-content{
+        margin-bottom: 0;
+    }
 
-.team .grid-2{
-    display: grid;
-    grid-template-areas:
-    "john-img john-content"
-    "bob-content bob-img";
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 1fr 1fr;
-}
-/* 
-.team .grid-2 div:nth-child(1) {
-    grid-column: 1/2;
- }
-
- .team .grid-2 div:nth-child(2) {
-    grid-column: 2/3;
- }
-
- .team .grid-2 div:nth-child(3) {
-    grid-column: 2/3;
- }
-
- .team .grid-2 div:nth-child(4) {
-    grid-column: 1/2;
- } */
-
-.john-content{
-    grid-area: john-content;
-}
-
-.john-img{
-    grid-area: john-img;
-}
-
-.bob-content{
-    grid-area: bob-content;
-}
-
-.bob-img{
-    grid-area: bob-img;
-}
-
-.service-button {
-    display: inline-block;
-    padding: 40px 0px;
-    font-size: 24px;
-    color: #fff;
-    background-color: #222;
-    border: none;
-    width: 100%;
-  }
-
-  /* Contact */
-  .contactus .grid-3{
-    display: grid;
-    grid-template-areas:
-    "contact location"
-    "hours hours";
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 1fr;
-    grid-gap: 1rem;
-}
-
-.contact{
-    grid-area: contact;
-}
-
-.location{
-    grid-area: location;
-}
-
-.hours{
-    grid-area: hours;
-    
-}
-
-footer p {
-    line-height: 3rem;
-}
+    .team .grid-2{
+        display: grid;
+        grid-template-areas:
+        "john-img john-content"
+        "bob-content bob-img";
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 1fr;
+    }
 
 
-     /* .contactus {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      
-      .contact:nth-child(1) {
-        flex-basis: calc(25% - 4px);
-      }
-      
-      .location:nth-child(3) {
-        flex-basis: calc(25% - 4px);
-      }
+    .john-content{
+        grid-area: john-content;
+    }
 
-      .hours:nth-child(2) {
-        flex-basis: calc(100% - 4px);
-      }
-       */
-       
+    .john-img{
+        grid-area: john-img;
+    }
+
+    .bob-content{
+        grid-area: bob-content;
+    }
+
+    .bob-img{
+        grid-area: bob-img;
+    }
+
+    .service-button {
+        display: inline-block;
+        padding: 40px 0px;
+        font-size: 24px;
+        color: #fff;
+        background-color: #222;
+        border: none;
+        width: 100%;
+    }
+
+    /* Contact */
+    .contactus .grid-3{
+        display: grid;
+        grid-template-areas:
+        "contact location"
+        "hours hours";
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 1rem;
+    }
+
+    .contact{
+        grid-area: contact;
+    }
+
+    .location{
+        grid-area: location;
+    }
+
+    .hours{
+        grid-area: hours;
+        
+    }
+
+    footer p {
+        line-height: 3rem;
+    }  
 }
 
 /* .team .grid {
