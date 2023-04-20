@@ -57,8 +57,13 @@ table {
     /* border:#dc0505; */
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 p {
     font-size: 1.1rem;
+    line-height: 1.5rem;
 }
 
 nav img {
@@ -106,8 +111,10 @@ nav a {
     color:#222;
     background-color: #c78c06;
     display: block;
+    padding: 2rem;
     padding-top:1rem;
     padding-bottom:1rem;
+    
 }
 
 .logo{
@@ -140,16 +147,18 @@ h1{
 
 
 #search-container {
-    position: flex;
     text-align: left;
-    justify-content: center;
+    display: flex;
 }
 
 #search {
     height:50px; 
     margin:0; 
     padding:10px;
-    width: 90%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    text-align: left;
    
 }
 
@@ -232,28 +241,28 @@ h1 {
 
 h2 {
     font-size:5rem;
-    font-weight: bolder;
+    font-weight: 800;
     padding-bottom: 1rem;
     line-height: 6rem;
 }
 
 h3 {
     font-size:3rem;
-    font-weight: bolder;
+    font-weight: 800;
     padding: 1rem;
     padding-left: 0;
 }
 
 h4 {
     font-size:2rem;
-    font-weight: bolder;
+    font-weight:800;
     padding-top: 1.5rem;
     padding-bottom: 1rem;
 }
 
 h5 {
     font-size:1.5rem;
-    font-weight: bolder;
+    font-weight: 800;
     /* add a line here, possibly get rid of the break in html */
     padding-bottom:0.5rem;
     /* text-decoration: underline;  
@@ -264,7 +273,7 @@ h5 {
 }
 
 .connect-button {
-    display: inline-block;
+    /* display: inline-block; */
     padding: 40px 0px;
     font-size: 24px;
     color: #222;
@@ -506,7 +515,7 @@ table, td, th {
     color: #fff;
     background-color: #222;
     border: none;
-    width: 35%;
+    width: 40%;
   }
   
   .service-button i {
@@ -543,7 +552,7 @@ table, td, th {
         align-items: center;
         background-color: #222;
         padding: 2rem 2rem;
-        padding-right: 4rem;
+        padding-right: 6rem;
         margin-right: auto;
         width: inherit;
      
@@ -705,7 +714,7 @@ table, td, th {
     "contact location"
     "hours hours";
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-gap: 1rem;
 }
 
@@ -719,6 +728,11 @@ table, td, th {
 
 .hours{
     grid-area: hours;
+    
+}
+
+footer p {
+    line-height: 3rem;
 }
 
 
