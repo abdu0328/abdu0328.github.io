@@ -140,20 +140,25 @@ h1{
 
 
 #search-container {
-    position: relative;
+    position: flex;
+    text-align: left;
+    justify-content: center;
 }
 
 #search {
     height:50px; 
     margin:0; 
     padding:10px;
-    width: 93%;
-    display: flex;
+    width: 90%;
+   
 }
 
 .search-button {
-    position:relative;
-    float:right;
+    /* position:relative; */
+    text-align: center;
+    margin:0;
+    /* width:min-content; */
+    /* float:right; */
     width:50px;
     height:50px;
     font-size: 25px;
@@ -395,6 +400,15 @@ h5 {
 .john-img img, .bob-img img{
     width: 100%;
     height: auto;
+    display: block;
+
+}
+
+.john-content, .bob-content{
+    background: #ffe6ac;
+    padding: 1rem;
+    padding-top: 0; 
+    margin-bottom: 1rem;
 }
 
 .contactus {
@@ -629,6 +643,10 @@ table, td, th {
      }
 
 /* team */
+.john-content, .bob-content{
+    margin-bottom: 0;
+}
+
 .team .grid-2{
     display: grid;
     grid-template-areas:
@@ -680,10 +698,48 @@ table, td, th {
     width: 100%;
   }
 
-     /* Contact */
+  /* Contact */
+  .contactus .grid-3{
+    display: grid;
+    grid-template-areas:
+    "contact location"
+    "hours hours";
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+}
 
-     
+.contact{
+    grid-area: contact;
+}
 
+.location{
+    grid-area: location;
+}
+
+.hours{
+    grid-area: hours;
+}
+
+
+     /* .contactus {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .contact:nth-child(1) {
+        flex-basis: calc(25% - 4px);
+      }
+      
+      .location:nth-child(3) {
+        flex-basis: calc(25% - 4px);
+      }
+
+      .hours:nth-child(2) {
+        flex-basis: calc(100% - 4px);
+      }
+       */
+       
 }
 
 /* .team .grid {
