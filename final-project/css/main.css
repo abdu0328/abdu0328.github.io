@@ -100,7 +100,6 @@ nav a {
     padding: 2rem;
     padding-top:1rem;
     padding-bottom:1rem;
-    
 }
 
 .logo {
@@ -138,7 +137,7 @@ h1 {
     text-align: left;
     display: flex;
 }
-
+/* Search bar styling */
 #search {
     height:50px; 
     margin:0; 
@@ -149,6 +148,7 @@ h1 {
     text-align: left;
 }
 
+/* Search icon/button styling */
 .search-button {
     text-align: center;
     margin:0;
@@ -170,6 +170,7 @@ h1 {
     position: relative;
 }
 
+/* Setting an absolute position of the bleed1 section over the welcome section  */
 .welcome .bleed1 {
     position: absolute;
     top: 1%;
@@ -195,6 +196,7 @@ h1 {
     padding: 5rem 1rem;
 }
 
+/* Heading Styles */
 h1 {
     background-color: #c78c06;
 }
@@ -227,6 +229,8 @@ h5 {
     border-bottom: 2px solid #c78c06;
 }
 
+/* Connect Button Style */
+
 .connect-button {
     padding: 40px 0px;
     font-size: 24px;
@@ -253,6 +257,7 @@ h5 {
     padding-right: 0rem;
 }
 
+/* Styling for Services (and Team images) divs */
 .digital, .marketing, .video, .web, .print {
     background: #ffe6ac;
     padding: 1rem;
@@ -269,6 +274,8 @@ h5 {
     padding-bottom: 1rem;
 }
 
+/* -- Vision Section -- */
+/* Setting up bleed accordinly, similiar to Welcome section/bleed */
 .vision {
     background-image: url("../images/vision.jpg");
     background-repeat: no-repeat;
@@ -288,6 +295,7 @@ h5 {
     padding-bottom: 1rem;
 }
 
+/* Vision Button */
 .vision-button {
     padding: 40px 0px;
     font-size: 24px;
@@ -301,6 +309,8 @@ h5 {
     margin-left: 1rem;
 }
 
+/* -- Team -- */
+/* Styling for the content and images for the team separately to allow for easy use of grid */
 .john-img img, .bob-img img{
     width: 100%;
     height: auto;
@@ -314,11 +324,13 @@ h5 {
     margin-bottom: 1rem;
 }
 
+/* -- Contact -- */
 .contactus {
     padding: 1rem;
     padding-top: 2rem;
 }
 
+/* Styling the forms */
 #fullname, #email {
     padding: 10px;
     margin-top:0.5rem;
@@ -342,9 +354,9 @@ table, td, th {
     width: 60%;
     padding: 1rem;
   }
-  
+ 
+/* Resetting/Changing the table width to 100% according to CSS rules */
 table {
-    border-collapse: collapse;
     width: 100%;
 }
   
@@ -385,7 +397,7 @@ footer a {
     grid-template-rows: repeat(5,1fr);
 } */
 
-/* -- Button styling -- */
+/* -- Service and Send (contact) button styling -- */
 .service-button {
     padding: 40px 0px;
     font-size: 24px;
