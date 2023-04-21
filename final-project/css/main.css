@@ -107,24 +107,16 @@ nav a {
     padding: 0 1rem;
 }
 
+/* Selecting each ul to have certain kind of padding to differentiate the first ul */
 nav ul li:nth-child(1) {
     padding: 0;
 }
 
-nav ul li:nth-child(2) {
+nav ul li:nth-child(2),
+nav ul li:nth-child(3),
+nav ul li:nth-child(4),
+nav ul li:nth-child(5){
     padding: 1rem;
-}
-
-nav ul li:nth-child(3) {
-    padding:1rem;
-}
-
-nav ul li:nth-child(4) {
-    padding:1rem;
-}
-
-nav ul li:nth-child(5) {
-    padding:1rem;
 }
 
 h1 {
